@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.adidas.tests.TestGETAllProducts">
+      <class name="com.adidas.tests.TestDeleteProduct">
         <methods>
-          <include name="setup"/>
           <include name="tearDown"/>
-          <include name="testGetAllProducts"/>
+          <include name="testInValidDeleteProduct_emptyProductId"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.adidas.tests.TestGETAllProducts -->
+      </class> <!-- com.adidas.tests.TestDeleteProduct -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

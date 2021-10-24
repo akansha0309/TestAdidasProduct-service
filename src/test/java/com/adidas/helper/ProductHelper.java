@@ -17,7 +17,7 @@ public class ProductHelper {
 
 	
 	
-	public void createProduct(Product product) {
+	public static void createProduct(Product product) {
 		LOG.info("creating product" + product.toString());
 		given()
 		.header("accept", "application/json")

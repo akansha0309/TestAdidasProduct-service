@@ -11,6 +11,10 @@ import com.adidas.model.Product;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 
 public class TestCreateProduct extends BaseTest{
 
@@ -47,21 +51,35 @@ public class TestCreateProduct extends BaseTest{
 		
 	}
 	
-	@Test
-	public void testCreateEmptyProduct() {
+	
+	
+	@Test(dataProvider = "createInvalidProducts")
+	public void testCreateEmptyProduct(String body) {
 		LOG.info("Test POST - create product");
 		given()
 		.header("accept", "application/json")
 		.header("content-type", "application/json")
-		.body(emptyProduct)
+		.body(body)
 		.post(BASE_URL+EndPoints.CREATE_PRODUCT)
 		.then()
 		.assertThat()
-		// This test will fail as API currently allows creating a product with empty fields. Once such entry is created, it breaks the system as GET /Products call starts failing
+		/* This test will fail as API currently allows creating a product with empty fields.
+		 * There is no validation on mandatory fields which should be fixed.
+		 * Once such a entry is created, it breaks the system as GET /Products call starts failing */
 		.statusCode(400)   
 		.and()
-		.body("$.",  hasEntry("error", "product cannot be empty"));
+		.body("$.",  hasEntry("error", "product fields cannot be empty"));
 		
+	}
+	
+	@DataProvider
+	public Iterator<String> createInvalidProducts() {
+		List<String> list = new ArrayList<String>();
+		list.add(new Product("", "", "").toString());
+		list.add(new Product("", "shoe1", "shoe1_desc").toString());
+		list.add(new Product("33", "", "shoe1_desc").toString());
+		list.add(new Product("32", "shoe2", "").toString());
+		return list.iterator();
 	}
 	
 	@AfterClass

@@ -1,0 +1,9 @@
+2021-10-24 19:53:02,318  INFO [main] BaseTest:28 - creating products
+2021-10-24 19:53:02,324  INFO [main] ProductHelper:33 - creating productProduct [id=1, name=Shoe1, description=New Shoes1]
+2021-10-24 19:53:04,322  INFO [main] ProductHelper:33 - creating productProduct [id=2, name=Shoe2, description=New Shoes2]
+2021-10-24 19:53:04,344  INFO [main] ProductHelper:33 - creating productProduct [id=3, name=Shoe3, description=New Shoes3]
+2021-10-24 19:53:04,376  INFO [main] BaseTest:43 - Test GET all Products
+2021-10-24 19:53:04,945  INFO [main] BaseTest:60 - deleting products
+2021-10-24 19:53:04,945  INFO [main] ProductHelper:55 - deleting productProduct [id=1, name=Shoe1, description=New Shoes1]
+2021-10-24 19:53:04,973  INFO [main] ProductHelper:55 - deleting productProduct [id=2, name=Shoe2, description=New Shoes2]
+2021-10-24 19:53:04,993  INFO [main] ProductHelper:55 - deleting productProduct [id=3, name=Shoe3, description=New Shoes3]

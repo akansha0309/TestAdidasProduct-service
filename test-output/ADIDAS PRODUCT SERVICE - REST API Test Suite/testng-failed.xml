@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ADIDAS PRODUCT SERVICE - REST API Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GET All PRODUCTS(failed)">
+    <classes>
+      <class name="com.adidas.tests.TestGETAllProducts">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testGetAllProducts"/>
+        </methods>
+      </class> <!-- com.adidas.tests.TestGETAllProducts -->
+      <class name="com.adidas.tests.TestGETAllProductsEmpty">
+        <methods>
+          <include name="testGetAllProductsEmpty"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.adidas.tests.TestGETAllProductsEmpty -->
+    </classes>
+  </test> <!-- GET All PRODUCTS(failed) -->
+  <test thread-count="5" name="Create A PRODUCT(failed)">
+    <classes>
+      <class name="com.adidas.tests.TestCreateProductDuplicate">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testCreateProductDuplicate"/>
+        </methods>
+      </class> <!-- com.adidas.tests.TestCreateProductDuplicate -->
+      <class name="com.adidas.tests.TestCreateProduct">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testCreateProduct"/>
+        </methods>
+      </class> <!-- com.adidas.tests.TestCreateProduct -->
+    </classes>
+  </test> <!-- Create A PRODUCT(failed) -->
+</suite> <!-- Failed suite [ADIDAS PRODUCT SERVICE - REST API Test Suite] -->

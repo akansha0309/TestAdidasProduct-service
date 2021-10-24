@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ADIDAS PRODUCT SERVICE - REST API Test Suite">
+
+	<test name="GET All PRODUCTS">
+		<classes>
+			<class name="com.adidas.tests.TestGETAllProducts" />
+			<class name="com.adidas.tests.TestGETAllProductsEmpty" />
+		</classes>
+	</test>
+	
+	<test name="Create A PRODUCT">
+		<classes>
+			<class name="com.adidas.tests.TestCreateProduct" />
+			<class name="com.adidas.tests.TestCreateProductDuplicate" />
+		</classes>
+	</test>
+
+
+</suite>  

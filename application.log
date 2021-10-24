@@ -1,11 +1,53 @@
-2021-10-25 01:56:04,271  INFO [main] BaseTest:31 - creating products
-2021-10-25 01:56:04,327  INFO [main] ProductHelper:33 - creating product{"id":"1","name":"Shoe1","description":"New Shoes1"}
-2021-10-25 01:56:06,826  INFO [main] ProductHelper:33 - creating product{"id":"2","name":"Shoe2","description":"New Shoes2"}
-2021-10-25 01:56:06,868  INFO [main] ProductHelper:33 - creating product{"id":"3","name":"Shoe3","description":"New Shoes3"}
-2021-10-25 01:56:06,942  INFO [main] BaseTest:80 - Test DELETE - delete product
-2021-10-25 01:56:07,143  INFO [main] BaseTest:62 - Test DELETE - delete product
-2021-10-25 01:56:07,457  INFO [main] BaseTest:46 - Test DELETE - delete product
-2021-10-25 01:56:07,483  INFO [main] BaseTest:95 - deleting products
-2021-10-25 01:56:07,483  INFO [main] ProductHelper:55 - deleting product{"id":"1","name":"Shoe1","description":"New Shoes1"}
-2021-10-25 01:56:07,500  INFO [main] ProductHelper:55 - deleting product{"id":"2","name":"Shoe2","description":"New Shoes2"}
-2021-10-25 01:56:07,520  INFO [main] ProductHelper:55 - deleting product{"id":"3","name":"Shoe3","description":"New Shoes3"}
+2021-10-25 03:00:10,711  INFO [main] BaseTest:28 - creating products
+2021-10-25 03:00:10,762  INFO [main] ProductHelper:33 - creating product{"id":"1","name":"Shoe1","description":"New Shoes1"}
+2021-10-25 03:00:13,079  INFO [main] ProductHelper:33 - creating product{"id":"2","name":"Shoe2","description":"New Shoes2"}
+2021-10-25 03:00:13,126  INFO [main] ProductHelper:33 - creating product{"id":"3","name":"Shoe3","description":"New Shoes3"}
+2021-10-25 03:00:13,197  INFO [main] BaseTest:43 - Test GET all Products
+2021-10-25 03:00:14,700  INFO [main] BaseTest:60 - deleting products
+2021-10-25 03:00:14,701  INFO [main] ProductHelper:55 - deleting product{"id":"1","name":"Shoe1","description":"New Shoes1"}
+2021-10-25 03:00:14,765  INFO [main] ProductHelper:55 - deleting product{"id":"2","name":"Shoe2","description":"New Shoes2"}
+2021-10-25 03:00:14,800  INFO [main] ProductHelper:55 - deleting product{"id":"3","name":"Shoe3","description":"New Shoes3"}
+2021-10-25 03:00:14,830  INFO [main] BaseTest:37 - Test GET all Products
+2021-10-25 03:00:15,047  INFO [main] BaseTest:30 - creating products
+2021-10-25 03:00:15,048  INFO [main] ProductHelper:33 - creating product{"id":"1","name":"Shoe1","description":"New Shoes1"}
+2021-10-25 03:00:15,068  INFO [main] ProductHelper:33 - creating product{"id":"2","name":"Shoe2","description":"New Shoes2"}
+2021-10-25 03:00:15,087  INFO [main] ProductHelper:33 - creating product{"id":"3","name":"Shoe3","description":"New Shoes3"}
+2021-10-25 03:00:15,106  INFO [main] ProductHelper:33 - creating product{"id":"4","name":"Shoe4","description":"New Shoes4"}
+2021-10-25 03:00:15,125  INFO [main] BaseTest:69 - Test GET a Products
+2021-10-25 03:00:15,182  INFO [main] BaseTest:47 - Test GET a Products
+2021-10-25 03:00:15,285  INFO [main] BaseTest:88 - deleting products
+2021-10-25 03:00:15,286  INFO [main] ProductHelper:55 - deleting product{"id":"1","name":"Shoe1","description":"New Shoes1"}
+2021-10-25 03:00:15,305  INFO [main] ProductHelper:55 - deleting product{"id":"2","name":"Shoe2","description":"New Shoes2"}
+2021-10-25 03:00:15,336  INFO [main] ProductHelper:55 - deleting product{"id":"3","name":"Shoe3","description":"New Shoes3"}
+2021-10-25 03:00:15,351  INFO [main] ProductHelper:55 - deleting product{"id":"4","name":"Shoe4","description":"New Shoes4"}
+2021-10-25 03:00:15,401  INFO [main] BaseTest:31 - creating products
+2021-10-25 03:00:15,402  INFO [main] ProductHelper:33 - creating product{"id":"1","name":"Shoe1","description":"New Shoes1"}
+2021-10-25 03:00:15,418  INFO [main] ProductHelper:33 - creating product{"id":"2","name":"Shoe2","description":"New Shoes2"}
+2021-10-25 03:00:15,436  INFO [main] ProductHelper:33 - creating product{"id":"3","name":"Shoe3","description":"New Shoes3"}
+2021-10-25 03:00:15,454  INFO [main] BaseTest:80 - Test DELETE - delete product
+2021-10-25 03:00:15,483  INFO [main] BaseTest:62 - Test DELETE - delete product
+2021-10-25 03:00:15,516  INFO [main] BaseTest:46 - Test DELETE - delete product
+2021-10-25 03:00:15,534  INFO [main] BaseTest:95 - deleting products
+2021-10-25 03:00:15,536  INFO [main] ProductHelper:55 - deleting product{"id":"1","name":"Shoe1","description":"New Shoes1"}
+2021-10-25 03:00:15,554  INFO [main] ProductHelper:55 - deleting product{"id":"2","name":"Shoe2","description":"New Shoes2"}
+2021-10-25 03:00:15,570  INFO [main] ProductHelper:55 - deleting product{"id":"3","name":"Shoe3","description":"New Shoes3"}
+2021-10-25 03:00:15,609  INFO [main] BaseTest:29 - Test POST - create product
+2021-10-25 03:00:15,649  INFO [main] BaseTest:52 - deleting products
+2021-10-25 03:00:15,650  INFO [main] ProductHelper:45 - deleting product{"id":"1","name":"Shoe1","description":"New Shoes1"}
+2021-10-25 03:00:15,668  INFO [main] ProductHelper:45 - deleting product{"id":"1","name":"Shoe1","description":"New Shoes1"}
+2021-10-25 03:00:15,692  INFO [main] BaseTest:58 - Test POST - create product
+2021-10-25 03:00:15,712  INFO [main] BaseTest:58 - Test POST - create product
+2021-10-25 03:00:15,736  INFO [main] BaseTest:58 - Test POST - create product
+2021-10-25 03:00:15,757  INFO [main] BaseTest:58 - Test POST - create product
+2021-10-25 03:00:15,777  INFO [main] BaseTest:36 - Test POST - create product
+2021-10-25 03:00:15,803  INFO [main] BaseTest:87 - deleting products
+2021-10-25 03:00:15,804  INFO [main] ProductHelper:45 - deleting product{"id":"1","name":"Shoe1","description":"New Shoes1"}
+2021-10-25 03:00:15,870  INFO [main] ProductHelper:21 - creating product{"id":"4","name":"Shoe1","description":"New Shoes1"}
+2021-10-25 03:00:15,888  INFO [main] BaseTest:58 - Test PUT - update product with invalid data
+2021-10-25 03:00:15,912  INFO [main] BaseTest:58 - Test PUT - update product with invalid data
+2021-10-25 03:00:15,939  INFO [main] BaseTest:58 - Test PUT - update product with invalid data
+2021-10-25 03:00:15,963  INFO [main] BaseTest:58 - Test PUT - update product with invalid data
+2021-10-25 03:00:15,993  INFO [main] BaseTest:40 - Test PUT - update product
+2021-10-25 03:00:16,028  INFO [main] BaseTest:90 - Test PUT - update product
+2021-10-25 03:00:16,053  INFO [main] BaseTest:106 - deleting products
+2021-10-25 03:00:16,053  INFO [main] ProductHelper:45 - deleting product{"id":"4","name":"Shoe1","description":"New Shoes1"}

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [ADIDAS PRODUCT SERVICE - REST API Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GET A PRODUCT(failed)">
+    <classes>
+      <class name="com.adidas.tests.TestGetAProduct">
+        <methods>
+          <include name="setup"/>
+          <include name="testGetProduct_product_doesnt_exists"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.adidas.tests.TestGetAProduct -->
+    </classes>
+  </test> <!-- GET A PRODUCT(failed) -->
+  <test thread-count="5" name="DELETE A PRODUCT(failed)">
     <classes>
       <class name="com.adidas.tests.TestDeleteProduct">
         <methods>
@@ -11,5 +22,35 @@
         </methods>
       </class> <!-- com.adidas.tests.TestDeleteProduct -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- DELETE A PRODUCT(failed) -->
+  <test thread-count="5" name="Create A PRODUCT(failed)">
+    <classes>
+      <class name="com.adidas.tests.TestCreateProduct">
+        <methods>
+          <include name="testCreateEmptyProduct" invocation-numbers="0 1 2 3"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.adidas.tests.TestCreateProduct -->
+      <class name="com.adidas.tests.TestCreateProductDuplicate">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testCreateProductDuplicate"/>
+        </methods>
+      </class> <!-- com.adidas.tests.TestCreateProductDuplicate -->
+    </classes>
+  </test> <!-- Create A PRODUCT(failed) -->
+  <test thread-count="5" name="UPDATE A PRODUCT(failed)">
+    <classes>
+      <class name="com.adidas.tests.TestUpdateProduct">
+        <methods>
+          <include name="testValidUpdateProduct_emptyID"/>
+          <include name="setup"/>
+          <include name="testInValidUpdateProduct" invocation-numbers="0 1 2 3"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.adidas.tests.TestUpdateProduct -->
+    </classes>
+  </test> <!-- UPDATE A PRODUCT(failed) -->
+</suite> <!-- Failed suite [ADIDAS PRODUCT SERVICE - REST API Test Suite] -->

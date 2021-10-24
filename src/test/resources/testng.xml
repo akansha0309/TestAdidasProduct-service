@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="ADIDAS PRODUCT SERVICE - REST API Test Suite">
-
-
-	<test name="Create A PRODUCT">
-		<classes>
-			<class name="com.adidas.tests.TestCreateProduct" />
-			<class name="com.adidas.tests.TestCreateProductDuplicate" />
-		</classes>
-	</test>
+<suite name="ADIDAS PRODUCT SERVICE - REST API Test Suite"
+	preserve-order="true">
 
 	<test name="GET All PRODUCTS">
 		<classes>
@@ -23,15 +16,25 @@
 		</classes>
 	</test>
 
-	<test name="UPDATE A PRODUCT">
-		<classes>
-			<class name="com.adidas.tests.TestUpdateProduct" />
-		</classes>
-	</test>
+
 
 	<test name="DELETE A PRODUCT">
 		<classes>
 			<class name="com.adidas.tests.TestDeleteProduct" />
+		</classes>
+	</test>
+
+	<test name="Create A PRODUCT">
+		<classes>
+			<class name="com.adidas.tests.TestCreateProductDuplicate" />
+			<class name="com.adidas.tests.TestCreateProduct" />
+
+		</classes>
+	</test>
+
+	<test name="UPDATE A PRODUCT">
+		<classes>
+			<class name="com.adidas.tests.TestUpdateProduct" />
 		</classes>
 	</test>
 

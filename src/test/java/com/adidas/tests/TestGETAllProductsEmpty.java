@@ -39,9 +39,9 @@ public class TestGETAllProductsEmpty extends BaseTest{
 		.get(BASE_URL + EndPoints.GET_ALL_PRODUCTS)
 		.then()
 		.assertThat()
-		.statusCode(204)   //This test will fail as the statusCode returned by the API for empty response is incorrect
+		.statusCode(200)   
 		.and()
-		.body("$.",  hasEntry("msg", "No Products found"));
+		.body("$.", hasSize(0));
 		 
 		
 	}

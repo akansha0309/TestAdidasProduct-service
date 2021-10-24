@@ -81,6 +81,8 @@ public class TestGetAProduct extends BaseTest{
 		
 	}
 	
+	
+	
 	@AfterClass
 	public void tearDown() {
 		LOG.info("deleting products");

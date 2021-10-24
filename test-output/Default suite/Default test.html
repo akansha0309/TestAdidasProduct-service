@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 25 01:56:04 GMT+05:30 2021</td>
+<td>Started on:</td><td>Mon Oct 25 02:29:28 GMT+05:30 2021</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3286 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1796 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,9 +75,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.adidas.tests.TestDeleteProduct.testInValidDeleteProduct_emptyProductId()'><b>testInValidDeleteProduct_emptyProductId</b><br>Test class: com.adidas.tests.TestDeleteProduct</td>
+<td title='com.adidas.tests.TestGetAProduct.testGetProduct_emptyId()'><b>testGetProduct_emptyId</b><br>Test class: com.adidas.tests.TestGetAProduct</td>
 <td><div><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;400&gt; but was &lt;404&gt;.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -123,7 +123,7 @@ Expected status code &lt;400&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at com.adidas.tests.TestDeleteProduct.testInValidDeleteProduct_emptyProductId(TestDeleteProduct.java:87)
+	at com.adidas.tests.TestGetAProduct.testGetProduct_emptyId(TestGetAProduct.java:91)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,9 +149,9 @@ Expected status code &lt;400&gt; but was &lt;404&gt;.
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace710144533", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace710144533'><pre>java.lang.AssertionError: 1 expectation failed.
-Expected status code &lt;400&gt; but was &lt;404&gt;.
+</pre></div><a href='#' onClick='toggleBox("stack-trace586479858", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace586479858'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
 
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
@@ -197,7 +197,7 @@ Expected status code &lt;400&gt; but was &lt;404&gt;.
 	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
 	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
-	at com.adidas.tests.TestDeleteProduct.testInValidDeleteProduct_emptyProductId(TestDeleteProduct.java:87)
+	at com.adidas.tests.TestGetAProduct.testGetProduct_emptyId(TestGetAProduct.java:91)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -225,25 +225,7 @@ Expected status code &lt;400&gt; but was &lt;404&gt;.
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.adidas.tests.TestDeleteProduct@1603cd68</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.adidas.tests.TestDeleteProduct.testValidDeleteProduct_productDoesntExists()'><b>testValidDeleteProduct_productDoesntExists</b><br>Test class: com.adidas.tests.TestDeleteProduct</td>
-<td></td>
-<td>0</td>
-<td>com.adidas.tests.TestDeleteProduct@1603cd68</td></tr>
-<tr>
-<td title='com.adidas.tests.TestDeleteProduct.testValidDeleteProduct_productExists()'><b>testValidDeleteProduct_productExists</b><br>Test class: com.adidas.tests.TestDeleteProduct</td>
-<td></td>
-<td>0</td>
-<td>com.adidas.tests.TestDeleteProduct@1603cd68</td></tr>
+<td>com.adidas.tests.TestGetAProduct@3cdf2c61</td></tr>
 </table><p>
 </body>
 </html>

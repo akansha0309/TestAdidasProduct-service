@@ -48,7 +48,7 @@ public class TestUpdateProduct extends BaseTest{
 		assertTrue(response.getStatusCode()==200);
 		Product updatedProduct = response.getBody().as(Product.class);
 		assertTrue(updatedProduct.equals(product2));
-		
+
 
 	}
 
@@ -61,10 +61,10 @@ public class TestUpdateProduct extends BaseTest{
 		.header("accept", "application/json")
 		.header("content-type", "application/json")
 		.body(product.toString())
-		.post(BASE_URL+EndPoints.UPDATE_PRODUCT)
+		.put(BASE_URL+EndPoints.UPDATE_PRODUCT)
 		.then()
 		.assertThat()
-		/* This test will fail as API currently allows creating a product with empty fields.
+		/* This test will fail as API currently allows updating product with empty fields.
 		 * There is no validation on mandatory fields which should be fixed.
 		 * Once such a entry is created, it breaks the system as GET /Products call starts failing */
 		.statusCode(400)   
@@ -76,9 +76,8 @@ public class TestUpdateProduct extends BaseTest{
 	@DataProvider
 	public Iterator<Product> updateInvalidProducts() {
 		List<Product> list = new ArrayList<Product>();
-		list.add(new Product());
-		list.add(new Product("4", "", ""));
-		list.add(new Product("4", "shoe1", "shoe1_desc"));
+		list.add(new Product("", "", ""));
+		list.add(new Product("", "shoe1", "shoe1_desc"));
 		list.add(new Product("4", "", "shoe1_desc"));
 		list.add(new Product("4", "shoe2", ""));
 		return list.iterator();
@@ -86,6 +85,20 @@ public class TestUpdateProduct extends BaseTest{
 
 
 
+	@Test
+	public void testValidUpdateProduct_emptyID() {
+		LOG.info("Test PUT - update product");
+		given()
+		.header("accept", "application/json")
+		.header("content-type", "application/json")
+		.body(product2.toString())
+		.put(BASE_URL+EndPoints.UPDATE_PRODUCT_EMPTYID)
+		.then()
+		.assertThat()
+		.statusCode(400);
+		
+
+	}
 
 
 	@AfterClass

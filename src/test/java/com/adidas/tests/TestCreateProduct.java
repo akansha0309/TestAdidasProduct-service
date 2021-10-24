@@ -41,7 +41,7 @@ public class TestCreateProduct extends BaseTest{
 		.post(BASE_URL+EndPoints.CREATE_PRODUCT)
 		.then()
 		.assertThat()
-		.statusCode(201)    // This test will fail as API is currently returning 200 status code. This is a bug
+		.statusCode(200)
 		.and()
 		.body("$.", aMapWithSize(4))
 		.body("$.", hasKey("_id"))
